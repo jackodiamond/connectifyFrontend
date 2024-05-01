@@ -1,0 +1,34 @@
+.container {
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.my-audio{
+  margin-left: 20px; 
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+
+ 
+}
+
+.controls{
+ 
+}
+
+.other-audio{
+  margin-left: 20px; 
+  margin-right: 20px; 
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+

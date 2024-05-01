@@ -1,0 +1,59 @@
+/* Background styles */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #4361EE, #7843EF); /* Blue to purple gradient */
+}
+
+/* Content wrapper styles */
+.content-wrapper {
+  text-align: center;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Optional Logo styles */
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Optional Slogan styles */
+.slogan {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Button container styles */
+.button-container {
+  display: flex; /* Keep flex for horizontal alignment */
+  justify-content: space-around; /* Distribute buttons evenly */
+  /* Removed flex-wrap: wrap; as not needed for horizontal alignment */
+}
+
+/* Button styles */
+.call-button {
+  background-color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px; /* Ensure square shape */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 30px;
+  font-weight: bold;
+  width: 150px; /* Adjust as needed */
+  height: 150px; 
+}
+
+.call-button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.wat{
+  margin-top:0px;
+}

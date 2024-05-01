@@ -1,0 +1,45 @@
+.container {
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left : 50px;
+  border-bottom: 1px solid #ddd;
+} 
+
+.video-other {
+  position: absolute;
+  width: 98%;
+	height: 86%;
+	bottom :10px;
+	top: 100px;
+  left: 10px; /* Add margin from left */
+  right: 10px; /* Add margin from right */
+  z-index:0;
+}
+
+.video-self {
+  position: absolute;
+	bottom: 10px;
+  left: 10px;
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+}
+
+.next{
+	position: absolute; 
+	bottom: 10px;
+  right: 20px;
+	text-size-adjust: 30px;
+}
+.next .MuiButton-root {
+	background: #47e681;
+	width: 200px;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  padding: 15px 30px; /* Adjust padding to increase button size */
+}
+

@@ -1,0 +1,52 @@
+.signup-container {
+  display: flex;
+  justify-content: center; /* Align form to the right side */
+  align-items: center;
+  height: 100vh;
+  /*background-image: url('your-background-image-url.jpg');  Add your background image URL here */
+  background-size: cover;
+}
+
+.signup-form {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow effect */
+  width: 300px; /* Set input field width */
+  align-self: flex-end; /* Align input fields to the right side */
+}
+
+.signup-input::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
