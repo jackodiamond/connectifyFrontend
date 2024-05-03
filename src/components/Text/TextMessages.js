@@ -15,7 +15,8 @@ function TextMessages() {
   useEffect(() => {
     if(socket.current===null)
     {
-      socket.current = io('http://65.2.180.137:5000/'); 
+      socket.current = io('https://connectify-backend.notionxr.com/');
+      socket.current.emit("text", "username");  
     }
     // Listen for messages from the server
     socket.current.on('message', (message) => {
@@ -25,12 +26,12 @@ function TextMessages() {
 
     // Join a random room
     const username = 'You' + Math.random(); // Replace 'You' with the actual username
-    
 
-    socket.current.on('roomId', (roomId) => {
-      setRoomId(roomId)
-      socket.current.emit('join', roomId, username);
-    });
+    socket.current.on('callIt', data => {
+      console.log("data : ",data.roomId)
+      setRoomId(data.roomId)
+      socket.current.emit("joinText", data.roomId);
+  });
 
     // Clean up on unmount
     return () => {
@@ -54,7 +55,7 @@ function TextMessages() {
 
   const handleNext = (event) => {
     setChatHistory([])
-    socket.current.emit('next',roomId);
+    socket.current.emit('nextText',roomId);
     setRoomId('') 
   };
 

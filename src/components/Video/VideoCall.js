@@ -19,7 +19,8 @@ const Room = (props) => {
     useEffect(() => {
         if(socketRef.current===null)
         {
-          socketRef.current = io('http://65.2.180.137:6000/'); 
+          socketRef.current = io('https://connectify-backend.notionxr.com/'); 
+          socketRef.current.emit("video", "username");
         }
 
         navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(stream => {
@@ -150,7 +151,7 @@ const Room = (props) => {
             peerRef.current.close();
         }
         callAccepted.current=false
-        socketRef.current.emit("next");
+        socketRef.current.emit("nextVideo");
         // Additional cleanup if needed
     }
 
